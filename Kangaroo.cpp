@@ -1,3 +1,11 @@
+/*
+ * Author: Bruce Adams
+ * email: ezaroth@gmail.com
+ * website: austingamestudios.com
+ *
+C++ program. This is from a Hackerrank problem.
+*/
+
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -32,9 +40,6 @@ string kangaroo(int x1, int v1, int x2, int v2)
     }
 }
 
-
-
-
 int main()
 {
     ofstream fout(getenv("OUTPUT_PATH"));
@@ -45,11 +50,8 @@ int main()
     vector<string> x1V1X2V2 = split_string(x1V1X2V2_temp);
 
     int x1 = stoi(x1V1X2V2[0]);
-
     int v1 = stoi(x1V1X2V2[1]);
-
     int x2 = stoi(x1V1X2V2[2]);
-
     int v2 = stoi(x1V1X2V2[3]);
 
     string result = kangaroo(x1, v1, x2, v2);
