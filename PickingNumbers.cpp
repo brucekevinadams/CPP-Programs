@@ -1,3 +1,11 @@
+/*
+ * Author: Bruce Adams
+ * email: ezaroth@gmail.com
+ * website: austingamestudios.com
+ *
+ C++ program to solve a Hackerrank problem
+*/
+
 #include <iostream>
 using namespace std;
 
