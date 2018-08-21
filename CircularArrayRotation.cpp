@@ -1,3 +1,19 @@
+/*
+ * Author: Bruce Adams
+ * email: ezaroth@gmail.com
+ * website: austingamestudios.com
+ *
+ C++ program from a Hackerrank problem.
+
+ It should return an array of integers representing the values at the specified indices.
+ CircularArrayRotation has the following parameter(s):
+
+    n: an array of integers to rotate
+    k: an integer, the rotation count
+    q: an array of integers, the queries
+*/
+
+
 #include <iostream>
 #include <vector>
 #include <algorithm>
