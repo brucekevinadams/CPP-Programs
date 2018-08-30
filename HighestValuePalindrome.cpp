@@ -1,8 +1,13 @@
+/* Author: Bruce Adams
+* www.austingamestudios.com
+* Hackerrank problem
+*/
+
 #include <bits/stdc++.h>
 
 using namespace std;
 
-string richieRich(string s, int n, int k){
+string palinDrome(string s, int n, int k){
    int lives=k;
    vector<bool> mod(n,false);  
    string temp(s); 
@@ -33,7 +38,7 @@ int main() {
     cin >> k;
     string s;
     cin >> s;
-    string result = richieRich(s, n, k);
+    string result = palinDrome(s, n, k);
     cout << result << endl;
     return 0;
 }
