@@ -9,7 +9,6 @@
  * Third, I found the maximum substring count, and printed it out
 */
 
-
 #include <bits/stdc++.h>
 using namespace std;
  
@@ -50,10 +49,11 @@ vector<int> buildSuffixArray(string txt, int n)
     sort(suffixes, suffixes+n, cmp);
  
     // At this point, all suffixes are sorted according to first
-    // two characters.  Let us sort suffixes according to first four
+    // 2 characters.  Let us sort suffixes according to first 4
     // characters, then first 8 and so on
     int ind[n];  // This array is needed to get the index in suffixes[]
-    // from original index.  This mapping is needed to get next suffix.
+    // from original index.  This mapping is needed to get
+    // next suffix.
     for (int k = 4; k < 2*n; k = k*2)
     {
         // Assigning rank and index values to first suffix
@@ -103,7 +103,7 @@ vector<int> buildSuffixArray(string txt, int n)
 }
  
 /* To construct and return LCP */
-vector<int> lcpArr(string txt, vector<int> suffixArr)
+vector<int> kasai(string txt, vector<int> suffixArr)
 {
     int n = suffixArr.size();
  
@@ -167,7 +167,7 @@ int main()
     vector<int>suffixArr = buildSuffixArray(str, str.length());
     int n = suffixArr.size();
  
-    vector<int>lcp = lcpArr(str, suffixArr);
+    vector<int>lcp = kasai(str, suffixArr);
   
     int res = n;
     int maxNum = 0;
