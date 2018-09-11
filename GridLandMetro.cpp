@@ -1,5 +1,15 @@
+/*
+ * Author: Bruce Adams
+ * email: ezaroth@gmail.com
+ * website: austingamestudios.com
+ *
+ * C++ program from a Hackerrank problem.
+*/
+
 #include <bits/stdc++.h>
+
 using namespace std;
+
 vector< pair <int,int> > merge(vector< pair <int,int> > &v) {
     vector< pair <int,int> > merged;
     
@@ -14,8 +24,8 @@ vector< pair <int,int> > merge(vector< pair <int,int> > &v) {
         top=s.top();
         if(v[i].first > top.second)
             s.push(v[i]);
-        else if(top.second < v[i].second){   // if v[i].first <= top.second 
             top.second=v[i].second;
+        else if(top.second < v[i].second){   
             s.pop();
             s.push(top);
         }
@@ -37,13 +47,11 @@ int main() {
         int r, c1, c2; cin >> r >> c1 >> c2;
         track[r].push_back(make_pair(c1, c2));
     }
-    long totalcells = ((long)n) * ((long)m);    // total no of cells in gridland
+    long totalcells = ((long)n) * ((long)m);    // gridland total cells
     
-    for(auto &node : track){             //  merging the tracks of each row one by one
+    for(auto &node : track){            
         node.second = merge(node.second);
         vector< pair <int,int> > tr=node.second;   
-        // counting one by one by through each row, cells covered by tracks and 
-        // subtracting them from totalcells                                                         
         for(int i=0;i<tr.size();i++){
                totalcells-=((long)tr[i].second)-((long)tr[i].first)+1;
         }
