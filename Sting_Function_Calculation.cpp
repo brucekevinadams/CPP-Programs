@@ -49,12 +49,11 @@ vector<int> buildSuffixArray(string txt, int n)
     // defined above.
     sort(suffixes, suffixes+n, cmp);
  
-    // At his point, all suffixes are sorted according to first
-    // 2 characters.  Let us sort suffixes according to first 4
+    // At this point, all suffixes are sorted according to first
+    // two characters.  Let us sort suffixes according to first four
     // characters, then first 8 and so on
     int ind[n];  // This array is needed to get the index in suffixes[]
-    // from original index.  This mapping is needed to get
-    // next suffix.
+    // from original index.  This mapping is needed to get next suffix.
     for (int k = 4; k < 2*n; k = k*2)
     {
         // Assigning rank and index values to first suffix
