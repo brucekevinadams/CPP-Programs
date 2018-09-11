@@ -12,7 +12,7 @@
 #include <bits/stdc++.h>
 using namespace std;
  
-// Structure to store information of a suffix
+// Structure to store suffix information 
 struct suffix
 {
     int index;  // To store original index
@@ -21,7 +21,7 @@ struct suffix
  
 // A comparison function used by sort() to compare two suffixes
 // Compares two pairs, returns 1 if first pair is smaller
-int cmp(struct suffix a, struct suffix b)
+int compare(struct suffix a, struct suffix b)
 {
     return (a.rank[0] == b.rank[0])? (a.rank[1] < b.rank[1] ?1: 0):
            (a.rank[0] < b.rank[0] ?1: 0);
@@ -46,7 +46,7 @@ vector<int> buildSuffixArray(string txt, int n)
  
     // Sort the suffixes using the comparison function
     // defined above.
-    sort(suffixes, suffixes+n, cmp);
+    sort(suffixes, suffixes+n, compare);
  
     // At this point, all suffixes are sorted according to first
     // 2 characters.  Let us sort suffixes according to first 4
@@ -90,7 +90,7 @@ vector<int> buildSuffixArray(string txt, int n)
         }
  
         // Sort the suffixes according to first k characters
-        sort(suffixes, suffixes+n, cmp);
+        sort(suffixes, suffixes+n, compare);
     }
  
     // Store indexes of all sorted suffixes in the suffix array
@@ -103,7 +103,7 @@ vector<int> buildSuffixArray(string txt, int n)
 }
  
 /* To construct and return LCP */
-vector<int> kasai(string txt, vector<int> suffixArr)
+vector<int> lcpArr(string txt, vector<int> suffixArr)
 {
     int n = suffixArr.size();
  
@@ -167,7 +167,7 @@ int main()
     vector<int>suffixArr = buildSuffixArray(str, str.length());
     int n = suffixArr.size();
  
-    vector<int>lcp = kasai(str, suffixArr);
+    vector<int>lcp = lcpArr(str, suffixArr);
   
     int res = n;
     int maxNum = 0;
