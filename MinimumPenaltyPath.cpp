@@ -2,6 +2,7 @@
  * Author: Bruce Adams
  * email: ezaroth@gmail.com
  * website: austingamestudios.com
+ * 
  *
  * C++ program from a Hackerrank problem.
 */
