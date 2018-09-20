@@ -40,15 +40,11 @@ int main()
     vector<string> nkx = split_string(nkx_temp);
 
     int n = stoi(nkx[0]);
-
     int k = stoi(nkx[1]);
-
     int x = stoi(nkx[2]);
 
     long answer = countArray(n, k, x);
-
     fout << answer << "\n";
-
     fout.close();
 
     return 0;
