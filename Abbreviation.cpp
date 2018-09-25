@@ -1,3 +1,10 @@
+/*
+* Author: Bruce Adams
+* www.austingamestudios.com
+* C++ program
+* Hackerrank problem
+*/
+
 #include <bits/stdc++.h>
 
 using namespace std;
