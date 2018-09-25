@@ -1,3 +1,11 @@
+/*
+* Author: Bruce Adams
+* www.austingamestudios.com
+* C++ program
+* Hackerrank problem
+*/
+
+
 #include<bits/stdc++.h>
 #define LL long long
 #define M 1000000007
