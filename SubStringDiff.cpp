@@ -1,5 +1,14 @@
+/*
+* Author: Bruce Adams
+* www.austingamestudios.com
+* C++ program
+* Hackerrank problem
+*/
+
 #include <bits/stdc++.h>
+
 using namespace std;
+
 int c[1505][1505];
 int l,s;
 bool solve(int mid)
