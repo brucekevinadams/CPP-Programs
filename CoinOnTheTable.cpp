@@ -1,3 +1,11 @@
+/*
+* Author: Bruce Adams
+* www.austingamestudios.com
+* C++ program
+* Hackerrank problem
+*/
+
+
 #include <iostream>
 #include <vector>
 #include <string>
