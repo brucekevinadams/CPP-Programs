@@ -3,6 +3,7 @@
 * www.austingamestudios.com
 * C++ program
 * Hackerrank problem
+*  Completed as a 1-line return
 */
 
 #include <bits/stdc++.h>
