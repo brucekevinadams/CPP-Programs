@@ -1,3 +1,11 @@
+/*
+ * Author: Bruce Adams
+ * email: ezaroth@gmail.com
+ * website: austingamestudios.com
+ * C++ program
+ * Hackerrank problem
+ */
+
 #include <cmath>
 #include <iostream>
 #include <vector>
