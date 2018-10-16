@@ -3,7 +3,8 @@
  * email: ezaroth@gmail.com
  * website: austingamestudios.com
  * C++ program
- * Hackerrank problem
+ * Hackerrank problem that should return an integer that represents the
+ * minimum absolute difference between any pair of elements. 
  */
 
 #include <bits/stdc++.h>
